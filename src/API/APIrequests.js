@@ -26,3 +26,11 @@ export async function blogByCategories(id){
         return [];
     }
 }
+export async function blogDetails(id){
+    let response = await  axios.get(BaseURL+"/post-details/"+id)
+    if (response.status === 200){
+        return response.data;
+    }else{
+        return [];
+    }
+}

@@ -18,7 +18,7 @@ const NavBar = () => {
                     <MobileNavBar Categories={Categories}/>
                 </div>
                 <div className="navbar-center">
-                    <a className="btn btn-ghost text-4xl hover:bg-transparent">NA BLOGS</a>
+                    <a href="/" className="btn btn-ghost text-4xl hover:bg-transparent">NA BLOGS</a>
                 </div>
                 <div className="navbar-end">
                 </div>

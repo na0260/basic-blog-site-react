@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Footer = () => {
+    const webURL = "//nurahmed.netlify.app/"
     return (
         <div>
             <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
@@ -32,7 +33,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p>Copyright © 2023 - All right reserved by <a href="" >N.AHMED</a> </p>
+                    <p>Copyright © 2023 - All right reserved by <a href={webURL} >N.AHMED</a> </p>
                 </div>
             </footer>
 
