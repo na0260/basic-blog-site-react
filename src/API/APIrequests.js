@@ -18,3 +18,11 @@ export async function blogLatest(){
         return [];
     }
 }
+export async function blogByCategories(id){
+    let response = await  axios.get(BaseURL+"/post-list/"+id)
+    if (response.status === 200){
+        return response.data;
+    }else{
+        return [];
+    }
+}

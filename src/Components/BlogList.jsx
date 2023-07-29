@@ -8,7 +8,7 @@ const BlogList = (props) => {
                 <div className="grid grid-cols-1 mt-2 md:grid-cols-2 lg:grid-cols-4 gap-10">
                     {
                         props.Blogs.map((item,index)=>{
-                            return (<Link key={index.toString()} to={"/"} className="card w-100 bg-base-200 shadow-2xl">
+                            return (<Link key={index.toString()} to={"/"} className="card w-100 bg-base-200 shadow-2xl hover:bg-base-300/100">
                                 <figure><img src={item['img']} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h2 className="card-title">

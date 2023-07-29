@@ -31,7 +31,7 @@ const NavBar = () => {
                         <li><NavLink to={"/"} className="text-lg">হোম</NavLink></li>
                         {
                             Categories.map((item,index)=>{
-                                return (<li><NavLink to={"/category-wise-blog/"+item['id']} className="text-lg">{item['name']}</NavLink></li>);
+                                return (<li key={index}><NavLink to={"/category-wise-blog/"+item['id']} className="text-lg">{item['name']}</NavLink></li>);
                             })
                         }
 
